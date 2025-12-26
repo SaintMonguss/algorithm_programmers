@@ -1,10 +1,10 @@
 def solution(n, edge):
-    adj = [[] for _ in range(n + 1)]
+    adj = [[] for i in range(n + 1)]
     for v1, v2 in edge:
         adj[v1].append(v2)
         adj[v2].append(v1)
     
-    ch = [0 for _ in range(n + 1)]
+    ch = [0 for i in range(n + 1)]
     ch[1] = 1
     
     queue = [1]
